@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WebNova | Usefull & Knowledgable</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- =============================================  NAVBAR  ============================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1633" viewBox="0 .003 421 274.997" id="w">
+               <g fill="#dc1354">
+                 <path d="M385.872 204.488c-19.401 0-35.171 15.769-35.171 35.127 0 19.359 15.77 35.15 35.17 35.15 19.338 0 35.129-15.791 35.129-35.15 0-19.358-15.791-35.127-35.128-35.127M264.25 202.01l-3.505 1.41c-2.372 0-4.167-.62-5.342-1.902-1.175-1.303-2.265-4.017-3.42-8.205L218.247 64.169h-65.94l-30.918 129.144c-1.068 4.55-2.287 7.543-3.697 8.889l-4.98 2.094c-4.251 0-7.456-3.653-9.486-10.982L60.427 64.169H0l56.666 168.503c3.44 9.979 7.179 17.969 11.154 23.889 3.996 5.918 9.444 10.448 16.346 13.674C91.132 273.398 99.87 275 110.555 275c27.799 0 45.534-14.486 53.098-43.504l22.885-87.627 23.995 86.217c2.628 9.039 6.24 16.9 10.748 23.547 4.51 6.623 10.172 11.88 16.967 15.684 6.857 3.78 14.893 5.684 24.059 5.684 6.262 0 12.842-1.795 19.766-5.363 6.9-3.547 13.332-8.803 19.273-15.812 5.918-6.987 10.49-15.085 13.652-24.337L393.63.005H334.55l-66.966 195.297c-1.22 3.609-2.48 5.767-3.334 6.708"></path>
+                 <path d="M385.872 274.766c-19.401 0-35.171-15.791-35.171-35.15 0-19.358 15.77-35.127 35.17-35.127 19.338 0 35.129 15.769 35.129 35.127 0 19.359-15.791 35.15-35.128 35.15"></path>
+               </g>
+            </svg>
+        </div>
+        WebNova
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero"     class="nav-link active">Home</a></li>
+        <li><a href="#carousel" class="nav-link">Carousel</a></li>
+        <li><a href="#quiz"     class="nav-link">Quiz</a></li>
+        <li><a href="#weather"  class="nav-link">Weather</a></li>
+      </ul>
+      <a href="#weather" class="nav-cta">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+        Live Weather
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero"     class="mobile-link">🏠 Home</a>
+      <a href="#carousel" class="mobile-link">🖼️ Carousel</a>
+      <a href="#quiz"     class="mobile-link">🧠 Quiz</a>
+      <a href="#weather"  class="mobile-link">🌤️ Weather</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- =============================================  HERO  ============================================= -->
+    <section id="hero" class="hero">
+      <div class="hero-bg-dots"></div>
+      <!-- Decorative morphing blobs -->
+      <div class="morph-blob mb-1"></div>
+      <div class="morph-blob mb-2"></div>
+      <div class="morph-blob mb-3"></div>
+
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-pulse"></span>
+          Welcome To Your Space
+        </div>
+        <h1 class="hero-title">
+          Welcome To<br/>
+          <span class="gradient-text">WebNova</span>
+        </h1>
+        <p class="hero-desc">
+          A fully responsive, interactive web project featuring a live image carousel,
+          an engaging quiz engine, and real-time weather data powered by a public API.
+        </p>
+        <div class="hero-buttons">
+          <a href="#carousel" class="btn btn-primary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 3l14 9-14 9V3z"/></svg>
+            Explore Features
+          </a>
+          <a href="#quiz" class="btn btn-outline">Take the Quiz →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item"><span class="stat-val">3</span><span class="stat-key">Sections</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat-item"><span class="stat-val">6</span><span class="stat-key">Quiz Topics</span></div>
+          <div class="stat-sep"></div>
+          <div class="stat-item"><span class="stat-val">Live</span><span class="stat-key">Weather API</span></div>
+        </div>
+      </div>
+
+      <!-- HERO ANIMATION: Floating skill cards orbiting a central hub -->
+      <div class="hero-visual reveal">
+        <div class="orbit-system">
+          <!-- Central hub -->
+          <div class="hub">
+            <div class="hub-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1633" viewBox="0 .003 421 274.997" id="w">
+               <g fill="#dc1354">
+                 <path d="M385.872 204.488c-19.401 0-35.171 15.769-35.171 35.127 0 19.359 15.77 35.15 35.17 35.15 19.338 0 35.129-15.791 35.129-35.15 0-19.358-15.791-35.127-35.128-35.127M264.25 202.01l-3.505 1.41c-2.372 0-4.167-.62-5.342-1.902-1.175-1.303-2.265-4.017-3.42-8.205L218.247 64.169h-65.94l-30.918 129.144c-1.068 4.55-2.287 7.543-3.697 8.889l-4.98 2.094c-4.251 0-7.456-3.653-9.486-10.982L60.427 64.169H0l56.666 168.503c3.44 9.979 7.179 17.969 11.154 23.889 3.996 5.918 9.444 10.448 16.346 13.674C91.132 273.398 99.87 275 110.555 275c27.799 0 45.534-14.486 53.098-43.504l22.885-87.627 23.995 86.217c2.628 9.039 6.24 16.9 10.748 23.547 4.51 6.623 10.172 11.88 16.967 15.684 6.857 3.78 14.893 5.684 24.059 5.684 6.262 0 12.842-1.795 19.766-5.363 6.9-3.547 13.332-8.803 19.273-15.812 5.918-6.987 10.49-15.085 13.652-24.337L393.63.005H334.55l-66.966 195.297c-1.22 3.609-2.48 5.767-3.334 6.708"></path>
+                 <path d="M385.872 274.766c-19.401 0-35.171-15.791-35.171-35.15 0-19.358 15.77-35.127 35.17-35.127 19.338 0 35.129 15.769 35.129 35.127 0 19.359-15.791 35.15-35.128 35.15"></path>
+               </g>
+            </svg>
+            </div>
+            <div class="hub-ring ring-r1"></div>
+            <div class="hub-ring ring-r2"></div>
+          </div>
+
+          <!-- Skill cards floating around hub -->
+          <div class="skill-card sk-1 float-anim" style="--d:0s">
+            <span>🌐</span>
+            <div class="sk-info">
+              <b>HTML5</b>
+              <div class="sk-bar"><div class="sk-fill" style="width:95%"></div></div>
+            </div>
+          </div>
+          <div class="skill-card sk-2 float-anim" style="--d:.8s">
+            <span>🎨</span>
+            <div class="sk-info">
+              <b>CSS3</b>
+              <div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div>
+            </div>
+          </div>
+          <div class="skill-card sk-3 float-anim" style="--d:1.6s">
+            <span>⚡</span>
+            <div class="sk-info">
+              <b>JavaScript</b>
+              <div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div>
+            </div>
+          </div>
+          <div class="skill-card sk-4 float-anim" style="--d:2.4s">
+            <span>🔗</span>
+            <div class="sk-info">
+              <b>REST API</b>
+              <div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div>
+            </div>
+          </div>
+
+          <!-- Achievement badges -->
+          <div class="badge-chip bc-1 float-anim" style="--d:.4s"><span>📱</span> Responsive</div>
+          <div class="badge-chip bc-2 float-anim" style="--d:1.2s"><span>⚡</span> Interactive</div>
+          <div class="badge-chip bc-3 float-anim" style="--d:2s"><span>🌍</span> Live Data</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================  CAROUSEL  ============================================= -->
+    <section id="carousel" class="section">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">01 / Image Carousel</span>
+          <h2 class="section-title">Demo <span class="gradient-text">Slider</span></h2>
+          <p class="section-sub">Auto-plays every 4s · Pauses on hover · Touch &amp; keyboard support</p>
+        </div>
+
+        <div class="carousel-box reveal">
+          <div class="carousel-stage" id="carouselStage">
+
+            <!-- SLIDE 1: Responsive Design -->
+            <div class="slide active">
+              <div class="slide-visual sv-responsive">
+                <div class="sv-bg" style="background:linear-gradient(135deg,#e0f2fe,#bae6fd)"></div>
+                <div class="sv-content">
+                  <!-- Device mockup illustration -->
+                  <div class="device-stack">
+                    <div class="dev dev-desktop">
+                      <div class="dev-bar"><span></span><span></span><span></span></div>
+                      <div class="dev-body">
+                        <div class="dev-line dl-full"></div>
+                        <div class="dev-cols">
+                          <div class="dev-col dc-wide"></div>
+                          <div class="dev-col dc-narrow">
+                            <div class="dev-line dl-half"></div>
+                            <div class="dev-line dl-half"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dev dev-tablet">
+                      <div class="dev-bar"><span></span></div>
+                      <div class="dev-body">
+                        <div class="dev-line dl-full"></div>
+                        <div class="dev-line dl-half"></div>
+                        <div class="dev-line dl-full"></div>
+                      </div>
+                    </div>
+                    <div class="dev dev-phone">
+                      <div class="dev-bar"><span></span></div>
+                      <div class="dev-body">
+                        <div class="dev-line dl-full"></div>
+                        <div class="dev-line dl-full"></div>
+                        <div class="dev-line dl-half"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sv-badge" style="background:#0ea5e9;color:#fff">📱 Responsive</div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <span class="slide-count">01 / 05</span>
+                <div class="slide-chip" style="background:#e0f2fe;color:#0284c7">Responsive Design</div>
+                <h3>Mobile-First Layouts</h3>
+                <p>CSS Grid &amp; Flexbox power layouts that adapt perfectly from 320px to 1920px wide screens.</p>
+                <div class="slide-tags">
+                  <span>CSS Grid</span><span>Flexbox</span><span>Media Queries</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 2: CSS Animations -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="sv-bg" style="background:linear-gradient(135deg,#fdf4ff,#f0abfc)"></div>
+                <div class="sv-content">
+                  <div class="anim-showcase">
+                    <div class="anim-item ai-1">
+                      <div class="anim-box pulse-box"></div>
+                      <span>pulse</span>
+                    </div>
+                    <div class="anim-item ai-2">
+                      <div class="anim-box spin-box"></div>
+                      <span>rotate</span>
+                    </div>
+                    <div class="anim-item ai-3">
+                      <div class="anim-box bounce-box"></div>
+                      <span>bounce</span>
+                    </div>
+                    <div class="anim-item ai-4">
+                      <div class="anim-box fade-box"></div>
+                      <span>fade</span>
+                    </div>
+                  </div>
+                  <div class="sparkles-wrap">
+                    <span class="sparkle sp-1">✦</span>
+                    <span class="sparkle sp-2">✦</span>
+                    <span class="sparkle sp-3">✦</span>
+                    <span class="sparkle sp-4">✦</span>
+                  </div>
+                  <div class="sv-badge" style="background:#c026d3;color:#fff">🎬 Animations</div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <span class="slide-count">02 / 05</span>
+                <div class="slide-chip" style="background:#fdf4ff;color:#c026d3">CSS Animations</div>
+                <h3>Smooth Transitions</h3>
+                <p>Keyframes, transforms, and cubic-bezier curves that make your UI feel alive and polished.</p>
+                <div class="slide-tags">
+                  <span>@keyframes</span><span>transform</span><span>transition</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 3: JavaScript DOM -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="sv-bg" style="background:linear-gradient(135deg,#fffbeb,#fde68a)"></div>
+                <div class="sv-content">
+                  <div class="dom-tree-visual">
+                    <div class="dtv-node dtv-root">
+                      <span class="dtv-icon">📄</span> document
+                    </div>
+                    <div class="dtv-branch">
+                      <div class="dtv-line"></div>
+                      <div class="dtv-node dtv-el">
+                        <span class="dtv-icon">🧩</span> &lt;div&gt;
+                      </div>
+                      <div class="dtv-branch">
+                        <div class="dtv-line"></div>
+                        <div class="dtv-node dtv-el"><span>📝</span> &lt;p&gt;</div>
+                        <div class="dtv-line"></div>
+                        <div class="dtv-node dtv-el dtv-active"><span>🔘</span> &lt;button&gt;</div>
+                      </div>
+                    </div>
+                    <div class="dtv-branch">
+                      <div class="dtv-line"></div>
+                      <div class="dtv-node dtv-el"><span>🖼️</span> &lt;img&gt;</div>
+                    </div>
+                  </div>
+                  <div class="sv-badge" style="background:#d97706;color:#fff">⚡ DOM</div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <span class="slide-count">03 / 05</span>
+                <div class="slide-chip" style="background:#fffbeb;color:#d97706">JavaScript DOM</div>
+                <h3>DOM Manipulation</h3>
+                <p>Dynamic querying, creating, and updating page elements using the vanilla JavaScript DOM API.</p>
+                <div class="slide-tags">
+                  <span>querySelector</span><span>addEventListener</span><span>innerHTML</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 4: API Integration -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="sv-bg" style="background:linear-gradient(135deg,#ecfdf5,#6ee7b7)"></div>
+                <div class="sv-content">
+                  <div class="api-flow-visual">
+                    <div class="afv-node">
+                      <span class="afv-icon">🌐</span>
+                      <p>Browser</p>
+                    </div>
+                    <div class="afv-arrow">
+                      <div class="afv-line"></div>
+                      <span class="afv-lbl afv-top">fetch()</span>
+                      <svg class="afv-svg" viewBox="0 0 40 14"><path d="M2 7h32M26 2l8 5-8 5" stroke="#059669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                    </div>
+                    <div class="afv-node">
+                      <span class="afv-icon">☁️</span>
+                      <p>API Server</p>
+                    </div>
+                    <div class="afv-arrow">
+                      <svg class="afv-svg" viewBox="0 0 40 14"><path d="M38 7H6M14 2L6 7l8 5" stroke="#6c63ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                      <span class="afv-lbl afv-bot">JSON data</span>
+                    </div>
+                    <div class="afv-node">
+                      <span class="afv-icon">📊</span>
+                      <p>Display</p>
+                    </div>
+                  </div>
+                  <div class="sv-badge" style="background:#059669;color:#fff">📡 REST API</div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <span class="slide-count">04 / 05</span>
+                <div class="slide-chip" style="background:#ecfdf5;color:#059669">API Integration</div>
+                <h3>Real-Time Data</h3>
+                <p>Connect to any public REST API using fetch(), handle async responses, and display live data on the page.</p>
+                <div class="slide-tags">
+                  <span>fetch()</span><span>async/await</span><span>JSON</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- SLIDE 5: Accessibility -->
+            <div class="slide">
+              <div class="slide-visual">
+                <div class="sv-bg" style="background:linear-gradient(135deg,#fff7ed,#fed7aa)"></div>
+                <div class="sv-content">
+                  <div class="a11y-visual">
+                    <div class="a11y-hub">
+                      <span>♿</span>
+                      <div class="a11y-ring ar1"></div>
+                      <div class="a11y-ring ar2"></div>
+                    </div>
+                    <div class="a11y-tags-grid">
+                      <div class="a11y-tag-v">ARIA Labels</div>
+                      <div class="a11y-tag-v">Keyboard Nav</div>
+                      <div class="a11y-tag-v">Semantic HTML</div>
+                      <div class="a11y-tag-v">Screen Reader</div>
+                    </div>
+                  </div>
+                  <div class="sv-badge" style="background:#b45309;color:#fff">♿ A11y</div>
+                </div>
+              </div>
+              <div class="slide-info">
+                <span class="slide-count">05 / 05</span>
+                <div class="slide-chip" style="background:#fff7ed;color:#b45309">Accessibility</div>
+                <h3>Inclusive UI Design</h3>
+                <p>Building for everyone with semantic HTML, ARIA roles, keyboard navigation, and screen reader support.</p>
+                <div class="slide-tags">
+                  <span>ARIA</span><span>Semantic HTML</span><span>WCAG</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /carousel-stage -->
+
+          <!-- Carousel Controls -->
+          <div class="carousel-footer">
+            <div class="carousel-controls">
+              <button class="ctrl-btn" id="prevSlide">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+              </button>
+              <div class="carousel-dots" id="carouselDots"></div>
+              <button class="ctrl-btn" id="nextSlide">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+              </button>
+            </div>
+            <div class="carousel-right">
+              <span id="slideStatus" class="slide-status">1 / 5</span>
+              <button class="pause-btn" id="pauseBtn">⏸ Pause</button>
+            </div>
+          </div>
+
+        </div><!-- /carousel-box -->
+      </div>
+    </section>
+
+    <!-- =============================================  QUIZ  ============================================= -->
+    <section id="quiz" class="section section-tinted">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">02 / Interactive Quiz</span>
+          <h2 class="section-title">Test Your <span class="gradient-text">Knowledge</span></h2>
+          <p class="section-sub">Choose a subject · 10 questions · 20s timer per question · Instant feedback</p>
+        </div>
+
+        <!-- SCREEN 1: Subject Selector -->
+        <div id="quizSubjectScreen" class="quiz-subject-screen reveal">
+          <p class="subject-screen-title">Pick a subject to begin</p>
+          <div class="subject-grid">
+            <button class="subject-card" data-subject="java">
+              <span class="scard-icon">☕</span>
+              <span class="scard-name">Java</span>
+              <span class="scard-meta">10 Questions</span>
+            </button>
+            <button class="subject-card" data-subject="python">
+              <span class="scard-icon">🐍</span>
+              <span class="scard-name">Python</span>
+              <span class="scard-meta">10 Questions</span>
+            </button>
+            <button class="subject-card" data-subject="os">
+              <span class="scard-icon">🖥️</span>
+              <span class="scard-name">Operating Systems</span>
+              <span class="scard-meta">10 Questions</span>
+            </button>
+            <button class="subject-card" data-subject="dbms">
+              <span class="scard-icon">🗄️</span>
+              <span class="scard-name">DBMS</span>
+              <span class="scard-meta">10 Questions</span>
+            </button>
+            <button class="subject-card" data-subject="ai">
+              <span class="scard-icon">🤖</span>
+              <span class="scard-name">Artificial Intelligence</span>
+              <span class="scard-meta">10 Questions</span>
+            </button>
+            <button class="subject-card" data-subject="webdev">
+              <span class="scard-icon">🌐</span>
+              <span class="scard-name">Web Development</span>
+              <span class="scard-meta">10 Questions</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- SCREEN 2: Active Quiz -->
+        <div id="quizActiveScreen" class="quiz-active-screen hidden">
+          <div class="quiz-layout">
+            <div class="quiz-card">
+              <!-- Top bar: subject + timer + exit -->
+              <div class="quiz-topbar">
+                <div class="quiz-subject-tag" id="quizSubjectTag">☕ Java</div>
+                <div class="quiz-timer-wrap">
+                  <svg class="timer-ring-svg" viewBox="0 0 44 44">
+                    <circle cx="22" cy="22" r="18" class="timer-ring-bg"/>
+                    <circle cx="22" cy="22" r="18" class="timer-ring-fill" id="timerRingFill"/>
+                  </svg>
+                  <span class="timer-num" id="timerNum">20</span>
+                </div>
+                <button class="quiz-exit-btn" id="quizExitBtn" title="Back to subjects">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                </button>
+              </div>
+
+              <!-- Progress -->
+              <div class="quiz-head">
+                <div class="quiz-progress-track">
+                  <div class="quiz-progress-fill" id="quizProgressFill"></div>
+                </div>
+                <div class="quiz-meta">
+                  <span id="questionCounter">Question 1 of 10</span>
+                  <span>Score: <strong id="liveScore">0</strong></span>
+                </div>
+              </div>
+
+              <!-- Question + Options -->
+              <div id="quizBody">
+                <p class="quiz-question" id="quizQuestion"></p>
+                <div class="quiz-options" id="quizOptions"></div>
+                <button class="btn btn-primary btn-full hidden" id="nextBtn">Next Question →</button>
+              </div>
+
+              <!-- Result screen -->
+              <div class="quiz-result hidden" id="quizResult">
+                <div class="result-icon" id="resultIcon">🏆</div>
+                <h3 id="resultHeading"></h3>
+                <p id="resultText"></p>
+                <div class="score-ring-wrap">
+                  <svg viewBox="0 0 100 100" class="score-ring">
+                    <defs>
+                      <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#6c63ff"/>
+                        <stop offset="100%" stop-color="#a78bfa"/>
+                      </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="42" class="ring-bg"/>
+                    <circle cx="50" cy="50" r="42" class="ring-fill" id="ringFill"/>
+                  </svg>
+                  <span class="ring-num" id="ringLabel">0/10</span>
+                </div>
+                <div class="result-actions">
+                  <button class="btn btn-primary" id="replayBtn">↺ Play Again</button>
+                  <button class="btn btn-outline" id="changeSubjectBtn">🎯 Change Subject</button>
+                </div>
+              </div>
+            </div><!-- /quiz-card -->
+
+            <!-- Side info cards -->
+            <div class="quiz-side">
+              <div class="quiz-info-card reveal" style="--delay:0s">
+                <div class="qic-icon" style="--ic:#eef2ff">⏱️</div>
+                <div><h4>20s Timer</h4><p>Each question has a 20-second countdown. Auto-skips on timeout.</p></div>
+              </div>
+              <div class="quiz-info-card reveal" style="--delay:.1s">
+                <div class="qic-icon" style="--ic:#f0fdf4">🎯</div>
+                <div><h4>Instant Feedback</h4><p>Correct/wrong highlighted immediately after your choice.</p></div>
+              </div>
+              <div class="quiz-info-card reveal" style="--delay:.2s">
+                <div class="qic-icon" style="--ic:#fff7ed">📊</div>
+                <div><h4>10 Questions</h4><p>Each subject has 10 unique multiple-choice questions.</p></div>
+              </div>
+              <div class="quiz-info-card reveal" style="--delay:.3s">
+                <div class="qic-icon" style="--ic:#fdf4ff">🏆</div>
+                <div><h4>Score Ring</h4><p>Animated SVG ring reveals your final score out of 10.</p></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /quizActiveScreen -->
+
+      </div>
+    </section>
+
+    <!-- =============================================  WEATHER  ============================================= -->
+    <section id="weather" class="section">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">03 / Live API Data</span>
+          <h2 class="section-title">Weather <span class="gradient-text">Checker</span></h2>
+          <p class="section-sub">Real-time data powered by OpenWeatherMap API</p>
+        </div>
+
+        <div class="weather-search reveal">
+          <div class="search-box">
+            <svg class="search-ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="cityInput" class="city-input" placeholder="Enter city name…" autocomplete="off"/>
+            <button class="btn btn-primary" id="getWeatherBtn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              Get Weather
+            </button>
+          </div>
+          <div class="quick-cities">
+            <span class="qc-label">Quick pick:</span>
+            <button class="qc-btn" data-city="London">🇬🇧 London</button>
+            <button class="qc-btn" data-city="Tokyo">🇯🇵 Tokyo</button>
+            <button class="qc-btn" data-city="New York">🗽 New York</button>
+            <button class="qc-btn" data-city="Mumbai">🇮🇳 Mumbai</button>
+            <button class="qc-btn" data-city="Paris">🇫🇷 Paris</button>
+            <button class="qc-btn" data-city="Dubai">🇦🇪 Dubai</button>
+          </div>
+        </div>
+
+        <div class="weather-result reveal" id="weatherWrap">
+          <div class="weather-placeholder" id="weatherPlaceholder">
+            <div class="wph-icons">
+              <span class="wph-ic wph-sun">☀️</span>
+              <span class="wph-ic wph-cloud">⛅</span>
+              <span class="wph-ic wph-rain">🌧️</span>
+            </div>
+            <p>Search any city to see live weather</p>
+          </div>
+
+          <div class="weather-loader hidden" id="weatherLoader">
+            <div class="loader-dots"><div></div><div></div><div></div></div>
+            <p>Fetching weather data…</p>
+          </div>
+
+          <div class="weather-error hidden" id="weatherError">
+            <span class="we-icon">🌫️</span>
+            <h4>City Not Found</h4>
+            <p id="errorMsg">Check the city name and try again.</p>
+          </div>
+
+          <div class="weather-card hidden" id="weatherCard">
+            <div class="wc-main">
+              <div class="wc-city-block">
+                <h2 class="wc-city" id="wcCity">—</h2>
+                <span class="wc-country" id="wcCountry">—</span>
+              </div>
+              <div class="wc-icon-block">
+                <img id="wcIcon" src="" alt="" class="wc-icon"/>
+                <span class="wc-cond" id="wcCondition">—</span>
+              </div>
+              <div class="wc-temp-block">
+                <span class="wc-temp" id="wcTemp">—</span><span class="wc-deg">°C</span>
+              </div>
+              <p class="wc-feels">Feels like <strong id="wcFeels">—</strong>°C</p>
+            </div>
+            <div class="wc-stats">
+              <div class="wc-stat"><span class="wcs-ico">💧</span><span class="wcs-val" id="wcHumidity">—</span><span class="wcs-key">Humidity</span></div>
+              <div class="wc-stat"><span class="wcs-ico">💨</span><span class="wcs-val" id="wcWind">—</span><span class="wcs-key">Wind</span></div>
+              <div class="wc-stat"><span class="wcs-ico">👁️</span><span class="wcs-val" id="wcVisibility">—</span><span class="wcs-key">Visibility</span></div>
+              <div class="wc-stat"><span class="wcs-ico">🌡️</span><span class="wcs-val" id="wcPressure">—</span><span class="wcs-key">Pressure</span></div>
+            </div>
+            <div class="wc-updated" id="wcUpdated"></div>
+          </div>
+        </div>
+
+        <p class="api-note reveal">
+          ℹ️ Fetch Weather data from <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap</a>.
+          And give weather results <code>visit</code> OpenWeatherMap for free API.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================  FOOTER  ============================================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="logo-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1633" viewBox="0 .003 421 274.997" id="w">
+               <g fill="#dc1354">
+                 <path d="M385.872 204.488c-19.401 0-35.171 15.769-35.171 35.127 0 19.359 15.77 35.15 35.17 35.15 19.338 0 35.129-15.791 35.129-35.15 0-19.358-15.791-35.127-35.128-35.127M264.25 202.01l-3.505 1.41c-2.372 0-4.167-.62-5.342-1.902-1.175-1.303-2.265-4.017-3.42-8.205L218.247 64.169h-65.94l-30.918 129.144c-1.068 4.55-2.287 7.543-3.697 8.889l-4.98 2.094c-4.251 0-7.456-3.653-9.486-10.982L60.427 64.169H0l56.666 168.503c3.44 9.979 7.179 17.969 11.154 23.889 3.996 5.918 9.444 10.448 16.346 13.674C91.132 273.398 99.87 275 110.555 275c27.799 0 45.534-14.486 53.098-43.504l22.885-87.627 23.995 86.217c2.628 9.039 6.24 16.9 10.748 23.547 4.51 6.623 10.172 11.88 16.967 15.684 6.857 3.78 14.893 5.684 24.059 5.684 6.262 0 12.842-1.795 19.766-5.363 6.9-3.547 13.332-8.803 19.273-15.812 5.918-6.987 10.49-15.085 13.652-24.337L393.63.005H334.55l-66.966 195.297c-1.22 3.609-2.48 5.767-3.334 6.708"></path>
+                 <path d="M385.872 274.766c-19.401 0-35.171-15.791-35.171-35.15 0-19.358 15.77-35.127 35.17-35.127 19.338 0 35.129 15.769 35.129 35.127 0 19.359-15.791 35.15-35.128 35.15"></path>
+               </g>
+            </svg>
+
+          </div>
+          FrontendCraft
+        </div>
+        <p>FrontendCraft
+
+Interactive Web Lab
+An advanced frontend project featuring responsive design,
+dynamic JavaScript components, and live weather API data · 2026</p>
+      </div>
+
+      <div class="footer-nav">
+        <h4>Navigate</h4>
+        <a href="#hero">Home</a>
+        <a href="#carousel">Carousel</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#weather">Weather</a>
+      </div>
+
+      <div class="footer-social-col">
+        <h4>Connect With Me</h4>
+        <!-- ✏️ Replace YOUR_USERNAME in each href with your actual handle -->
+        <div class="social-grid">
+
+          <a href="https://github.com/susofficialgitrepo-a11y" target="_blank" rel="noopener" class="soc-btn soc-github">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+
+          <a href="https://linkedin.com/in/subham-jana-bb33902b6" target="_blank" rel="noopener" class="soc-btn soc-linkedin">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+
+          <a href="https://x.com/SubhamJana25681?t=zbu48bXaMk5h697xb57rOw&s=09" target="_blank" rel="noopener" class="soc-btn soc-twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.259 5.631 5.905-5.631zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X
+          </a>
+
+          <a href="https://www.instagram.com/subham_jana___?igsh=cjIyZTIzcGpjNHI4&utm_source=ig_contact_invite" target="_blank" rel="noopener" class="soc-btn soc-instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            Instagram
+          </a>
+
+          <a href="https://youtube.com/@YOUR_USERNAME" target="_blank" rel="noopener" class="soc-btn soc-youtube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </a>
+
+          <a href="https://www.facebook.com/share/1GgrmhZvR4/" target="_blank" rel="noopener" class="soc-btn soc-facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+
+        </div>
+        <p class="social-hint">Thanks <code>👍</code> for visit my profiles</p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 WebNova &nbsp;·&nbsp; Built with Love ❤️ &amp; Vanilla JS &nbsp;·&nbsp; Internship Task 3</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
