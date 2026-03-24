@@ -258,7 +258,7 @@ In `index.html`, find the footer section and replace `YOUR_USERNAME`:
 ```html
 <a href="https://github.com/susofficialgitrepo-a11y" ...>GitHub</a>
 <a href="https://linkedin.com/in/subham-jana-bb33902b6" ...>LinkedIn</a>
-<a href="https://twitter.com/YOUR_USERNAME" ...>Twitter / X</a>
+<a href="[https://twitter.com/YOUR_USERNAME](https://x.com/SubhamJana25681?t=zbu48bXaMk5h697xb57rOw&s=09)" ...>Twitter / X</a>
 <a href="https://www.instagram.com/subham_jana___igsh=cjIyZTIzcGpjNHI4&utm_source=ig_contact_invite" ...>Instagram</a>
 
 ```
